@@ -1,0 +1,4 @@
+#! /bin/bash
+# gestures.txt
+libinput-gestures-setup stop
+libinput-gestures-setup start
