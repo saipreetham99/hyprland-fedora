@@ -89,16 +89,17 @@ To use this configuration, you will need to have Hyprland installed on your syst
 sudo pacman -S libinput-gestures wmctrl xdotool
 ```
 
-**Debian/Ubuntu:**
+**Fedora:**
 
 ```bash
-sudo apt-get install libinput-gestures wmctrl xdotool
+sudo dnf copr enable elxreno/libinput-gestures
+sudo dnf install libinput-gestures
 ```
 
 After installing `libinput-gestures`, you will need to add your user to the `input` group:
 
 ```bash
-sudo gpasswd -a $USER input
+sudo usermod -aG input $(whoami)
 ```
 
 Finally, you will need to reboot your system for the changes to take effect.
